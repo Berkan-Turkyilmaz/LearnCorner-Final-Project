@@ -1,0 +1,69 @@
+.bgbody {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+margin: 0;
+padding: 0;
+  background: linear-gradient(45deg , #cf2463 10%, #FBB03B 70%);
+  font-size: 16px;
+  background-repeat: no-repeat;
+  height: 150vh;
+  
+}
+
+.bgimage {
+padding: 0;
+margin: 0;
+width: 100%;
+height: 350px;
+display: block;
+}
+
+
+.navbar {
+display: flex;
+justify-content:end;
+align-items: center;
+gap: 100px;
+text-decoration: none;
+padding: 50px;
+}
+
+.logo {
+  height: 100px;
+}
+
+
+.navbar-left {
+display: flex;
+justify-content: space-between;
+gap: 50px;
+}
+
+
+.navbar-right {
+
+display: flex;
+justify-content: space-between;
+gap: 100px
+}
+
+
+.navlinkleft, .navlinkright {
+text-decoration: none;
+color: white;
+font-weight: bold;
+
+
+}
+
+.searchbox  {
+display: flex;
+justify-content: center;
+}
+
+.sbox  {
+outline: none;
+border: none;
+border-radius: 10px;
+padding: 6px;
+width: 180px;
+}

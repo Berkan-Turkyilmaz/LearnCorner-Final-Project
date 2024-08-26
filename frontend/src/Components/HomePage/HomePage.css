@@ -1,0 +1,264 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.general-con {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.swiper-info-idioms {
+  width: 100%;
+  margin-top: 5%;       
+  display: flex;
+  justify-content: space-around;
+}
+
+.swiper-container-header-extra-bg {
+  width: 65%;
+  height: 100%;
+  background: rgba(250, 234, 173, 0.5);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.swiper-container-header-extra-bg:hover {
+  transform: scale(1.03);
+}
+
+.swiper-and-header {
+  border-radius: 20px;
+}
+
+.swiper-container-header {
+  margin: 30px;
+  padding-left: 20px;
+}
+
+.swiper-container {
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+.post-container {
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #413030;
+}
+
+.post-title {
+  padding: 13px;
+  font-size: 13px;
+}
+
+.titel {
+  color: rgb(240, 232, 218);
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+}
+
+.detail-button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: wheat;
+  color: #3d2c2c;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.like-comment {
+  display: flex;
+  position: absolute;
+  bottom: 10px; 
+  right: 10px;
+  gap: 10px;
+}
+
+.likebuttonandp, .commentbuttonandp {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+}
+
+.amount {
+  color: wheat;
+}
+
+.icons {
+  fill: wheat;
+  color: wheat;
+}
+
+.director-and-idioms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.director-topiclists-container {
+  border-radius: 20px;
+  height: 250px;
+  width: 100%;
+  background: rgba(250, 234, 173, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.director-topiclists-container:hover {
+  transform: scale(1.03);
+}
+
+.director-topiclists-header-element {
+  padding-left: 40px;
+}
+.director-topiclists-header {
+  padding-left: 0px;
+}
+
+.icons-in-director {
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+  padding-top: 15px;
+}
+
+.icon-and-level{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.level-info{
+  font-weight: 500;
+}
+
+.director-click-cont {
+  padding-left: 35px;
+  padding-top: 15px;
+}
+
+.director-click {
+  text-decoration: none;
+  color: black;
+}
+
+.click-here {
+  margin-top: 10px;
+  font-weight: 700;
+  background: #000;
+  color: wheat;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.idioms-container {
+  padding: 30px;
+  height: 200px;
+  width: 500px;
+  background: rgba(250, 234, 173, 0.5);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.idioms-container:hover {
+  transform: scale(1.03);
+}
+
+.exercises-something {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2%;
+  
+}
+
+.something {
+  width: 48%;
+  height: 230px;
+  border-radius: 20px;
+  background: rgba(250, 234, 173, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.something:hover {
+  transform: scale(1.03);
+}
+
+.director-exercise {
+  width: 48%;
+  height: 230px;
+  border-radius: 20px;
+  background: rgba(250, 234, 173, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.director-exercise:hover {
+  transform: scale(1.03);
+}
+
+.something-header, .director-exercise-header {
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.director-exercise-without-header{
+  display: flex;
+  justify-content: space-around;
+
+}
+.director-exercise-without-header-span {
+  width: 35%;
+}
+.multiplechoice-icon-and-def{
+width: 20%;
+display: flex;
+align-items: center;
+gap: 10px;
+
+}
+.fillintheblanks-icon-and-def{
+width: 20%;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.dewh-span{
+  font-weight: 500;
+}
+
+.exercise-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.click-here-exercises{
+margin-top: 10px;
+font-weight: 700;
+background: #000;
+color: wheat;
+border-radius: 20px;
+padding: 10px;
+
+}
+
+.director-click-exercises-cont{
+  padding-left: 40px;
+}
+
+.director-exercises-click {
+  text-decoration: none;
+  color: black;
+}
