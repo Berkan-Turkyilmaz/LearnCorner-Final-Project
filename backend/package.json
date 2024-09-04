@@ -4,9 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "node index.js",
+    "build": "",
     "start": "node --env-file=.env index.js",
-    "dev": "node -r dotenv/config --watch  index.js"
+    "dev": "node -r dotenv/config --watch index.js"
   },
   "keywords": [],
   "author": "",
