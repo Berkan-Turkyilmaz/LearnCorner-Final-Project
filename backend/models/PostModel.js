@@ -18,6 +18,10 @@ const Post = sequelize.define("Post",{
             isUrl: true
         }
     },
+    content: {
+        type: DataTypes.TEXT,
+        allowNull:true
+    },
     likes: {
         type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull:true

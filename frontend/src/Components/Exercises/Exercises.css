@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+.individualquiz{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+.header-cont { 
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.general-cont {
+   
+    padding-left: 40px;
+    padding-top: 85px;
+    width: 100%;
+}
+.lists-cont {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    width: 70%;
+}
+
+.header-vocab-cont{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-container-ex {
+    
+    height: 650px;
+    width: 97%;
+    border-radius: 20px;
+    background: #faeaad80;
+    
+}
+.listheader-cont {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.vocab-and-grammer-ex-cont {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1%;
+}
+.exerciseslists {
+    background: linear-gradient(45deg, #f1b451, #fa9465);
+    border-radius: 20px;
+    border: 2px solid rgb(61, 59, 59);
+    width: 25%;
+    height: 400px;
+    min-width: 250px;
+}
+.quizzes-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    gap: 3px;
+}
+.individualnavlink {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.quiz-thema {
+    font-weight: 600;
+
+}
+.vocabulary-exercises-cont{
+    background: linear-gradient(45deg, #f2994a 0%, #f2c94c 100%);
+    border-radius: 20px;
+    border: 2px solid rgb(61, 59, 59);
+    width: 22%;
+    height: 400px;
+    min-width: 400px;
+}
+
+.button-add-to {
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+

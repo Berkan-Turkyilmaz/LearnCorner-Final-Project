@@ -52,7 +52,7 @@ export const getPost = async (req, res) => {
                     id: createdPost.id,
                     titel: createdPost.titel,
                     category: createdPost.category, 
-                    image: createdPost.image,
+                    content: createdPost.content,
                     message:"Post was created"})
                 }; 
             

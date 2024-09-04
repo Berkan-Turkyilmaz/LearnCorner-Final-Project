@@ -8,11 +8,13 @@ import Signup from './Components/Signup/Signup';
 import HomePage from './Components/HomePage/HomePage';
 import PageLayout from './Components/PageLayout/PageLayout';
 import GrammarPostList from './Components/GrammarPostList/GrammarPostList';
-import Postdetail from './Components/Postdetail/Postdetail';
+
 import Login from './Components/Login/Login';
-import Exercises from './Components/Exercises/exercises';
 import ExercisesDetail from './Components/ExercisesDetail/ExercisesDetail';
 import Memberships from './Components/Memberships/Memberships';
+import { AuthProvider } from './Components/AuthProvider';
+import Postdetail from './Components/Postdetail/PostDetail';
+import Exercises from './Components/Exercises/Exercises';
 
 function App() {
   
@@ -39,8 +41,9 @@ function App() {
   
   return (
     <>
-      
+      <AuthProvider>
       <RouterProvider router={router} ></RouterProvider>
+      </AuthProvider>
     </>
   )
 }

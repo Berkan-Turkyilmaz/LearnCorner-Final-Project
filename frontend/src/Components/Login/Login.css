@@ -1,0 +1,154 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.gen-container-login {
+
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    min-width: 1000px;
+    height: 700px;
+}
+
+
+.activ-container-login {
+    width: 70%;
+    height: 600px;
+    margin-top: 135px;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+.left-login {
+    padding-top: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 245, 245);
+    width: 35%;
+    
+    
+}
+
+ 
+
+.header-and-blanks-login{
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-login {
+    
+    width: 70% ;
+    border-radius: 20px;
+    border: 1px solid rgb(214, 211, 211);
+    padding: 10px;
+}
+
+
+
+.input-cont-login{
+display: flex;
+flex-direction: column;
+
+}
+
+.infos-login {
+    font-size: 13px;
+    font-weight: 500;
+}
+.must-be-login{
+    font-size: 11px;
+    font-weight: 500;
+}
+.create-account-submit-login{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding-top: 10px;
+    
+}
+.submit-button-login {
+    border: none;
+    width: 45%;
+    padding: 12px;
+    border-radius: 18px;
+    color: white;
+    background: black;
+    font-weight: 600;
+}
+
+.already-have-account-login{
+    padding-top: 20px;
+    display: flex;
+    gap: 5px;
+
+}
+
+.navlink-to-signup{
+    color: black;
+    font-weight: 700;
+}
+
+.already-have-account-signup {
+    padding-top: 20px;
+}
+
+.right-login {
+    padding-top: 40px;
+
+    border-left: 2px solid black;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgb(255, 245, 245);
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    
+}
+.glass-cont-login {
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+   gap: 12%;
+}
+
+
+.ps-login p {
+    color: black; 
+    
+   font-weight: 500;
+}
+.ps-login {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.insta-login {
+    
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.insta-login-span {
+    align-items: center;
+   justify-content: flex-start;
+    display: flex;
+    gap: 5px;
+}
+
+.insta-login span {
+    font-weight: 500;
+    font-size: 13px;
+}

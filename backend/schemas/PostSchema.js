@@ -2,9 +2,10 @@ import Joi from 'joi';
 
 const postSchema = Joi.object({
 
-    titel: Joi.string().min(8).required(),
+    titel: Joi.string().required(),
     category: Joi.string().required(),
-    image: Joi.string().uri().required()
+    image: Joi.string().uri().required(),
+    content: Joi.string().required()
     
 
 });

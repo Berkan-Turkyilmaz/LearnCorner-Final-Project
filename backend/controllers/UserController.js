@@ -1,8 +1,9 @@
 import User from "../models/UserModel.js";
 import userSchema from "../schemas/UserSchema.js";
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 
-
-
+const JWT_SECRET = process.env.JWT_SECRET;
 
 export const getUsers = async (req, res) => {
 
@@ -15,7 +16,6 @@ try {
     } 
 
     return res.status(200).json(Users);
-//buraya hangi bilgiler gösterilmek istiyorsa editleyebilirim. Belki exclude createdat ... 
 
 
 } catch (error) {
@@ -49,20 +49,23 @@ export const getUser = async (req, res) => {
                 return res.status(400).json({error: error.message})
             } else {
 
-                const {email, username, password} = req.body;
+                const {email, firstname, password} = req.body;
 
-                const existedUsername = await User.findOne({where: {username:username}});
+                const existedFirstName = await User.findOne({where: {firstname:firstname}});
                 const existedEmail = await User.findOne({where: {email:email}});
 
-                if(existedEmail || existedUsername) {
+                if(existedEmail || existedFirstName) {
                     return res.status(400).json({message: "Email or Username is already taken"})
                 } else {
 
-                const createdUser = await User.create(req.body);
+
+
+                const hashedPassword = await bcrypt.hash(password, 10)
+                const createdUser = await User.create({email, firstname, password: hashedPassword});
             return  res.status(201).json({
                     id: createdUser.id,
-                    username: createdUser.username,
-                    password: createdUser.password, 
+                    firstname: createdUser.firstname,
+                   
                     message:"User was created"})
                 }; }
             
@@ -115,3 +118,29 @@ export const deleteUser = async (req, res) => {
             return res.status(500).send("Something went wrong")
         }};
 
+
+        export const loginUser = async (req, res) => {
+            const { email, password } = req.body;
+        
+            try {
+                const user = await User.findOne({ where: { email: email } });
+                
+                if (!user) {
+                    return res.status(404).json({ message: 'User not found' });
+                }
+        
+                const isMatch = await bcrypt.compare(password, user.password);
+                
+                if (!isMatch) {
+                    return res.status(400).json({ message: 'Invalid credentials' });
+                }
+        
+                const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '1h' });
+        
+                return res.status(200).json({ message: 'Login successful', token: token });
+        
+            } catch (error) {
+                console.error(error);
+                return res.status(500).json({ error: error.message });
+            }
+        };

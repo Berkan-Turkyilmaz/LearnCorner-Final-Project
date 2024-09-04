@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+  
+}
+
+.gen-con-postdetail {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    width: 100%;
+    padding: 20px;
+}
+
+.post-container-postdetail {
+    width: 60%;
+    max-width: 1200px; 
+    border-radius: 20px;
+    background: rgba(250, 234, 173, 0.9); /* Hafif opak arka plan */
+    
+}
+
+.postdetail-header-cont {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.post-header-postdetail {
+    font-size: 2rem; /* Başlık boyutu */
+    font-weight: bold;
+    color: #000000; /* Başlık rengi */
+}
+
+.postdetail-content-cont {
+    padding: 50px;
+    line-height: 1.6; /* Satır aralığı */
+    color: #444; /* İçerik rengi */
+}
+
+.postdetail-content {
+    font-size: 1rem; /* İçerik yazı boyutu */
+    word-wrap: break-word; /* Uzun kelimeleri kırmak için */
+}
+
+/* Başlık ve paragraflar için stil ayarları */
+h2, h3 {
+    color: #222; /* Başlık rengi */
+    margin-bottom: 10px; /* Başlık ile altındaki içerik arasında boşluk */
+}
+
+p {
+    margin-bottom: 15px; /* Paragraflar arasında boşluk */
+}
+
+/* Resim stili (varsa) */
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Köşe yuvarlama */
+    margin-bottom: 20px;
+}

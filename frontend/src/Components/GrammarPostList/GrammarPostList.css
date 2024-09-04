@@ -1,72 +1,130 @@
-.card-container {
-display: flex;
-justify-content: space-around;
-margin-top: 125px;
-}
-.info-text-container {
-border-radius: 20px;
-margin-top: 120px;
-margin-left: 90px;
-border: 2px solid black;
-background: rgba(250, 234, 173, 0.5);}
-.info-text-titel {
-padding-left: 45px;
-}
-.info-text {
-padding-left: 40px;
-padding-bottom: 25px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 500;
-}
-.card-front  {
-background: linear-gradient(45deg, #f3a6b9 10%, #fdd28a 70%);
-height: 400px;
-width: 300px;
-border: 2px solid black;
-margin-bottom: 100px;
-font-weight: 500;
-display: flex;
-flex-direction: column;
-}
-.card-back {
-background: linear-gradient(45deg, #f3a6b9 10%, #fdd28a 70%);
-height: 400px;
-width: 300px;
-border: 2px solid black;
-position: relative;
-margin-bottom: 100px;
-font-weight: 500;
-}
-.card-front:hover, .card-back:hover {   
-box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.2);  
-background: linear-gradient(45deg, #FBB03B, #cf2463);
-}
-.levels-and-icons {
-padding-left: 120px;
-height: 35%;
-display: flex;
-flex-direction: column;
-}
-.levels {
-font-size: 30px;
-}
-.text-a1, .text-a2, .text-b1, .text-b2 {
-padding: 20px;
-display: flex; 
-flex-direction: column;
-}
-.a1topicscontainer, .a2topicscontainer, 
-.b1topicscontainer, .b2topicscontainer {
-margin: 40px;
-}
-.circles {
-height: 8px;
-}
-.themes {
-text-decoration: none;
-color: black;
-}
-.exercises {
-border: 2px solid black;
+* {
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
 }
 
+
+.gen {
+
+    padding-left: 40px;
+    padding-top: 85px;
+    width: 100%;
+}
+
+.info-text-text-ex-cont {
+    padding-top: 20px;
+}
+
+.info-text-container {
+    height: 750px;
+    width: 97%;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(250, 234, 173, 0.5);
+    
+}
+
+.navlink-to-post-details {
+    text-decoration: none;
+    color: black;
+}
+.info-text2 {
+    font-weight: 700;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.info-text-titel {
+    padding-left: 30px;
+    padding-top: 10px       ;
+}
+
+.info-text {
+    padding-left: 30px;
+    padding-bottom: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.card-container {
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.card-front {
+    background: linear-gradient(45deg, #f3a6b9 10%, #fdd28a 70%);
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    margin-bottom: 100px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back {
+    background: linear-gradient(45deg, #f3a6b9 10%, #fdd28a 70%);
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    position: relative;
+    margin-bottom: 100px;
+    font-weight: 500;
+}
+
+.card-front:hover,
+.card-back:hover {
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #FBB03B, #cf2463);
+}
+
+.levels-and-icons {
+    padding-top: 40px;
+    padding-left: 120px;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.levels {
+    font-size: 30px;
+}
+
+.text-a1,
+.text-a2,
+.text-b1,
+.text-b2 {
+    padding-left: 20px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+.a1topicslist, .a2topicslist, .b1topicslist, .b2topicslist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.a1topicscontainer,
+.a2topicscontainer,
+.b1topicscontainer,
+.b2topicscontainer {
+    padding: 20px;
+}
+
+.circles {
+    height: 8px;
+}
+
+.themes {
+    text-decoration: none;
+    color: black;
+}
+
+.exercises {
+    border: 2px solid black;
+}
