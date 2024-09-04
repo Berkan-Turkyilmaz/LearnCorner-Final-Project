@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "node index.js",
     "start": "node --env-file=.env index.js",
     "dev": "node -r dotenv/config --watch  index.js"
   },
