@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "",
-    "start": "node --env-file=.env index.js",
+    "start": "node index.js",
     "dev": "node -r dotenv/config --watch index.js"
   },
   "keywords": [],
